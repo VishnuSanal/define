@@ -33,14 +33,20 @@ func main() {
 	resp, err := http.Get(queryURL)
 
 	if err != nil {
-		fmt.Println("HTTP request failed: please make sure that you are conencted to the internet!")
-		panic(err)
+		fmt.Printf(color.RedString("HTTP request failed:") + " please make sure that you are conencted to the internet!")
+		os.Exit(1)
 	}
 
 	defer resp.Body.Close()
 
+	if resp.StatusCode == 404 {
+		color.HiRed("Word not found!")
+		os.Exit(1)
+	}
+
 	if resp.StatusCode != 200 {
-		panic("API not available: please make sure that you are conencted to the internet!")
+		color.HiRed("API not available")
+		os.Exit(1)
 	}
 
 	var word []Word
@@ -51,15 +57,15 @@ func main() {
 		panic(err)
 	}
 
-	color.HiBlue(argWord + "\n\n")
+	// color.HiGreen(argWord + "\n\n")
 
 	for _, meaning := range word[0].Meanings {
 
-		fmt.Printf("PartOfSpeech: %s\n", meaning.PartOfSpeech)
+		fmt.Printf(": %s\n", color.GreenString((meaning.PartOfSpeech)))
 
 		for _, definition := range meaning.Definitions {
 
-			fmt.Printf(": %s\n", definition.Definition)
+			fmt.Printf(" -> %s\n", color.BlueString(definition.Definition))
 
 		}
 
