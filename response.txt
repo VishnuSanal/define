@@ -1,0 +1,22 @@
+&{
+    200 OK 200 HTTP/2.0 2 0 map[Access-Control-Allow-Origin: [*
+        ] Content-Length: [
+            364
+        ] Content-Type: [application/json; charset=utf-8
+        ] Date: [Sat,
+            10 Jun 2023 07: 13: 42 GMT
+        ] Etag: [W/"16c-zOt4jabeHeh/15wsnyX/DBR6iCI"
+        ] Server: [nginx/1.20.0
+        ] Vary: [Accept-Encoding
+        ] X-Powered-By: [Express
+        ] X-Ratelimit-Limit: [
+            450
+        ] X-Ratelimit-Remaining: [
+            449
+        ] X-Ratelimit-Reset: [
+            1686381443
+        ]
+    ] {
+        0xc00010a300
+    } 364 [] false false map[] 0xc0000ec000 0xc0000d6420
+}
