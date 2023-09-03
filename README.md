@@ -1,7 +1,7 @@
 # define
 A command line dictionary written in GoLang
 
-<img src="https://github.com/VishnuSanal/define/assets/50027064/6ea484a9-2e53-4f15-90c0-933ec08c2fd3" />
+<img src="https://github.com/VishnuSanal/define/assets/50027064/b607ed80-6429-467b-abd4-b3729d476285" />
 
 # Usage
 
