@@ -1,16 +1,16 @@
 # define
 A command line dictionary written in GoLang
 
-<img src="https://github.com/VishnuSanal/dict/assets/50027064/6ea484a9-2e53-4f15-90c0-933ec08c2fd3" />
+<img src="https://github.com/VishnuSanal/define/assets/50027064/6ea484a9-2e53-4f15-90c0-933ec08c2fd3" />
 
 # Usage
 
-Download the executable from [latest release](https://github.com/VishnuSanal/dict/releases/latest) into `~/bin/` & run `chmod +x ~/bin/dict`
+Download the executable from [latest release](https://github.com/VishnuSanal/define/releases/latest) into `~/bin/` & run `chmod +x ~/bin/define`
 
 # Building locally
 
 ```
-git clone https://github.com/VishnuSanal/dict.git
+git clone https://github.com/VishnuSanal/define.git
 cd dict
 do build
 ```
